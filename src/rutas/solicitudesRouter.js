@@ -3,6 +3,10 @@ import { crearSolicitud, buscarSolicitudes, buscarSolicitudId, actualizarSolicit
 
 const routerSolicitudes = express.Router();
 
+routerSolicitudes.get('/', (req, res) => {
+    res.send('Solicitudes de adopción para mascotas');
+});
+
 routerSolicitudes.post('/crear', crearSolicitud);
 routerSolicitudes.get('/buscar', buscarSolicitudes);
 routerSolicitudes.get('/buscarId/:id', buscarSolicitudId);

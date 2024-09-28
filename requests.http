@@ -4,35 +4,18 @@
 POST http://localhost:4000/mascotas/crear
 Content-Type: application/json
 
-{
-  "nombre": "Max",
-  "edad": 3,
-  "raza": "Golden Retriever",
-  "genero": "Macho",
-  "estado": "Disponible",
-  "tipo_id": 1
-}
-
 ### Buscar todas las mascotas (GET)
 GET http://localhost:4000/mascotas/buscar
 
 ### Buscar una mascota por ID (GET)
-GET http://localhost:4000/mascotas/buscarId/4
+GET http://localhost:4000/mascotas/buscarId/
 
 ### Actualizar una mascota (PUT)
-PUT http://localhost:4000/mascotas/actualizar/1
+PUT http://localhost:4000/mascotas/actualizar/
 Content-Type: application/json
 
-{
-  "nombre": "Max Actualizado",
-  "edad": 4,
-  "raza": "Labrador",
-  "genero": "Macho",
-  "estado": "Adoptado"
-}
-
 ### Eliminar una mascota (DELETE)
-DELETE http://localhost:4000/mascotas/eliminar/1
+DELETE http://localhost:4000/mascotas/eliminar/
 
 
 ////////////////////////////////////////////////////////////////////////////////////////
@@ -44,12 +27,6 @@ DELETE http://localhost:4000/mascotas/eliminar/1
 POST http://localhost:4000/solicitudes/crear
 Content-Type: application/json
 
-{
-  "usuario_id": 1,
-  "mascota_id": 1,
-  "comentarios": "Me interesa adoptar esta mascota"
-}
-
 ### Buscar todas las solicitudes de adopción (GET)
 GET http://localhost:4000/solicitudes/buscar
 
@@ -59,11 +36,6 @@ GET http://localhost:4000/solicitudes/buscarId/1
 ### Actualizar una solicitud de adopción (PUT)
 PUT http://localhost:4000/solicitudes/actualizar/1
 Content-Type: application/json
-
-{
-  "estado": "Aprobada",
-  "comentarios": "Aprobada con éxito"
-}
 
 ### Eliminar una solicitud de adopción (DELETE)
 DELETE http://localhost:4000/solicitudes/eliminar/1
@@ -78,10 +50,6 @@ DELETE http://localhost:4000/solicitudes/eliminar/1
 POST http://localhost:4000/tipos-mascotas/crear
 Content-Type: application/json
 
-{
-  "nombre_tipo": "Perro"
-}
-
 ### Buscar todos los tipos de mascotas (GET)
 GET http://localhost:4000/tipos-mascotas/buscar
 
@@ -91,10 +59,6 @@ GET http://localhost:4000/tipos-mascotas/buscarId/1
 ### Actualizar un tipo de mascota (PUT)
 PUT http://localhost:4000/tipos-mascotas/actualizar/1
 Content-Type: application/json
-
-{
-  "nombre_tipo": "Gato"
-}
 
 ### Eliminar un tipo de mascota (DELETE)
 DELETE http://localhost:4000/tipos-mascotas/eliminar/1
@@ -110,14 +74,6 @@ DELETE http://localhost:4000/tipos-mascotas/eliminar/1
 POST http://localhost:4000/usuarios/crear
 Content-Type: application/json
 
-{
-  "nombre": "micho",
-  "apellido": "Pérez",
-  "correo_electronico": "juan.perez@example.com",
-  "telefono": "123456789",
-  "direccion": "Calle Falsa 123"
-}
-
 ### Buscar todos los usuarios (GET)
 GET http://localhost:4000/usuarios/buscar
 HTTP/1.1
@@ -130,14 +86,6 @@ HTTP/1.1
 PUT http://localhost:4000/usuarios/actualizar/1
 Content-Type: application/json
 
-{
-  "nombre": "Juan Carlos",
-  "apellido": "Pérez",
-  "correo_electronico": "juan.c.perez@example.com",
-  "telefono": "987654321",
-  "direccion": "Avenida Siempreviva 742"
-}
-
 ### Eliminar un usuario (DELETE)
-DELETE http://localhost:4000/usuarios/eliminar/1
+DELETE http://localhost:4000/usuarios/eliminar/2                                                           
 HTTP/1.1
